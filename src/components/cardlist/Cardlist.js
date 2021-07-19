@@ -3,15 +3,15 @@ import "./cardlist.css";
 import Card from "../cards/Card";
 
 const Cardlist = ({ users }) => {
+    return(
+        <div className="card-list">
+            {
+                users.map(user => <Card  key={user.id} user={ user } />)
+                
+            }
+        </div>
+    )
     
-    <div className="card-list">
-        {
-            users.map(user => <Card user={ user } />)
-            
-        }
-
-
-    </div>
 }
 
 export default Cardlist;
