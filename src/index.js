@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom'
+// import Firstcomponent from './components/Firstcomponent';
+// import Secondcomponent from './components/Secondcomponent';
+// import './components/style.css';
+// import Forms from './components/Forms'
+// import LoggedIn from './components/LoggedIn'
+// import Arrays from './components/Arrays';
+import Search from './components/search/Search';
+import "./global.css"
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+// const Boxes = ({size = 'small', ...restOfProps}) => {
+//   return <div className={`box ${ size ? `box--${size}` : '' }`}  {...restOfProps} />
+// }
+
+// const smallBox = <div className='box box--small' children='small lightBlue Box'></div>
+// const mediumBox = <div className='box box--medium' children='Medium Pink Box'></div>
+// const largeBox = <div className='box box--large' children='Large Orange Box'></div>
+
+ReactDOM.render (
+  <>
+  <Search title='Monster'/>
+  </>,
   document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+)
